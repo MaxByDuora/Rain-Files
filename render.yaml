@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: rain-drop
+    runtime: node
+    plan: free
+    # If this file lives in a subfolder of a bigger repo, set Root Directory
+    # to "rain-files" in the Render dashboard (or push this folder as its own repo).
+    buildCommand: npm install --omit=dev
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: DROP_SECRET
+        generateValue: true

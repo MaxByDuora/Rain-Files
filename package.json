@@ -1,0 +1,9 @@
+{
+  "name": "rain-drop",
+  "version": "1.0.0",
+  "description": "Rain Drop — Duora's own file host for the Rainy bot. Any file type, keyed, disk-capped.",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
